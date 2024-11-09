@@ -2,37 +2,85 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todoList {
+  max-width: 600px;
+  /* Limite la largeur de la liste */
+  margin: 20px auto;
+  /* Centre la liste */
+  padding: 20px;
+  /* Ajoute un peu d'espace autour */
+  border: 1px solid #ccc;
+  /* Bordure légère */
+  border-radius: 8px;
+  /* Coins arrondis */
+  background-color: #f9f9f9;
+  /* Couleur d'arrière-plan douce */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* Ombre légère pour donner du relief */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todoList h1 {
+  text-align: center;
+  /* Centre le titre */
+  color: #333;
+  /* Couleur du texte */
+  font-family: 'Arial', sans-serif;
+  /* Police simple */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.paragrap-ul {
+  list-style-type: none;
+  /* Supprime les puces */
+  padding: 0;
+  /* Supprime le remplissage */
+  margin: 10px 0;
+  /* Espacement entre les listes */
+}
+
+.paragrap-ul li {
   display: flex;
-  flex-direction: column;
+  /* Utilise flexbox pour un alignement facile */
+  justify-content: space-between;
+  /* Espace entre le texte et les boutons */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* Centre les éléments verticalement */
+  padding: 10px;
+  /* Ajoute de l'espace autour de chaque élément */
+  border-bottom: 1px solid #eaeaea;
+  /* Bordure entre les éléments */
+}
+
+.removeBtn,
+.editBtn {
+  margin-left: 10px;
+  /* Ajoute un espace entre les boutons */
+  background-color: #e74c3c;
+  /* Couleur rouge pour le bouton de suppression */
+  border: none;
+  /* Supprime la bordure par défaut */
   color: white;
+  /* Couleur du texte en blanc */
+  border-radius: 5px;
+  /* Coins arrondis */
+  padding: 5px 10px;
+  /* Espacement interne */
+  cursor: pointer;
+  /* Change le curseur au survol */
+  transition: background-color 0.3s;
+  /* Transition pour le survol */
 }
 
-.App-link {
-  color: #61dafb;
+.removeBtn:hover {
+  background-color: #c0392b;
+  /* Couleur plus foncée au survol */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.editBtn {
+  background-color: #3498db;
+  /* Couleur bleue pour le bouton d'édition */
+}
+
+.editBtn:hover {
+  background-color: #2980b9;
+  /* Couleur plus foncée au survol */
 }
